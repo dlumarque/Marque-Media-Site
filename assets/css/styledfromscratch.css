@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+  src: url(./assets/fonts/lulo-clean/Lulo Clean One Bold.otf);
+  font-family: lulo-one;
+  src: url(./assets/fonts/lulo-clean/Lulo Clean Outline Bold.otf);
+  font-family: lulo-outline;
+  src: url(./assets/fonts/lulo-clean/Lulo Clean Two Bold.otf);
+  font-family: lulo-two;
+}
+
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* These should set up proper nice formatting for both header and footer. */
+header {
+    font-family: "lulo-outline", sans-serif;
+    font-size: 14px;
+    font-weight: 1000;
+    font-style: bold;
+    color: #FFF;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+header li, header a {
+  text-decoration: none;
+  letter-spacing: 0.2em;
+}
+
+.logo {
+  height: 64px;
+  width: 110px;
+  cursor: pointer;
+}
+
+.navlinks, .footeritems {
+  display: flex;
+  align-items: center;
+}
+
+.navlinks li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.navlinks a {
+  color: #FFF;
+  transition: all 0.3s ease 0s;
+}
+
+.navlinks a:hover {
+  color: #0088a9;
+}
+
+.footeritems a {
+  color: #FFF;
+}
+
+/* General page structure -- a 'grid' with a single column,
+so that we get a nice wrapping for header, body, and footer.
+adjust margins and padding as needed; label each section
+with class="grid-item"*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0px 50px;
+  grid-gap: 10px;
+  background-color: transparent;
+  padding: 10px 10px;
+}
+
+.grid-container > .grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8);  */
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* For sorting the main part of "work" page */
+.video-gallery {
+  display: grid;
+ grid-template-columns: auto auto;
+ grid-gap: 10px;
+ background-color: transparent;
+ padding: 10px;
+}
+
+.video-gallery > div {
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+
+
+/* This'll be an extra line at the bottom of the page atm,
+can move or give it better placement in the future */
+.designcred {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-family: 'Helvetica';
+  color: #FFF;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+/* troubleshooting */
+.flex3 {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  font-family: "lulo-one", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  color: #FFF;
+
+}

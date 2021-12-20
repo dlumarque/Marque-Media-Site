@@ -1,0 +1,49 @@
+#masterPage.mesh-layout {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: max-content max-content min-content max-content;
+    grid-template-rows: -webkit-max-content -webkit-max-content -webkit-min-content -webkit-max-content;
+    grid-template-rows: max-content max-content min-content max-content;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    align-items: start;
+    justify-content: stretch;
+}
+
+#masterPage {
+    --pinned-layers-in-page: 0;
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+    min-width: 980px;
+    background-color: black;
+}
+
+a, abbr, acronym, address, applet, b, big, blockquote, body, button, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, iframe, img, ins, kbd, label, legend, li, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, title, tr, tt, u, ul, var {
+    margin: 0;
+    margin-left: 0px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+#masterPage.mesh-layout #SITE_FOOTER, #masterPage.mesh-layout #SITE_FOOTER_WRAPPER, #masterPage.mesh-layout #SITE_HEADER, #masterPage.mesh-layout #SITE_HEADER_WRAPPER {
+    position: relative;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-row-align: start;
+    -ms-grid-column-align: start;
+    grid-area: 1/1/2/2;
+}
+
+#SITE_HEADER {
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+    min-width: 980px;
+    z-index: 49;
+    --above-all-in-container: 10000;
+}
+
